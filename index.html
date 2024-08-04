@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NUESTRO PRIMER MES :3</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        audio {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div>
-        <h1 class = "titulo">Nuestro Primer Aniversario</h1>
-        <p class = "cuerpo"> 
+        <h1 class="titulo">Nuestro Primer Aniversario</h1>
+        <p class="cuerpo"> 
             Hola amor, ¿cómo estás? 
             ¡Ya estamos cumpliendo un mes! Han pasado muchas cosas y
             no sé cómo describirlas... Hemos podido compartir 
@@ -25,7 +30,6 @@
             Por eso quiero que siempre recuerdes que me encantas, 
             quiero estar contigo y quiero que siempre seas la 
             persona más importante para mí.
-        
         </p>
     </div>
 
@@ -33,7 +37,7 @@
         <div class="heart"></div>
     </section>
 
-    <audio id="background-music" autoplay>
+    <audio id="background-music">
         <source src="music/audio.mp3" type="audio/mpeg">
         Tu navegador no soporta el elemento de audio.
     </audio>
@@ -41,13 +45,14 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const audio = document.getElementById('background-music');
-            if (audio) {
-                audio.play().catch(error => {
-                    console.error('Error al intentar reproducir el audio:', error);
-                });
-            } else {
-                console.error('No se pudo encontrar el elemento de audio con id "background-music".');
-            }
+
+            document.body.addEventListener('click', () => {
+                if (audio) {
+                    audio.play().catch(error => {
+                        console.error('Error al intentar reproducir el audio:', error);
+                    });
+                }
+            }, { once: true }); 
         });
     </script>
 
