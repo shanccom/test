@@ -126,3 +126,7 @@ body {
         height: 70px;
     }
 }
+
+audio {
+    background-color: transparent;
+}
