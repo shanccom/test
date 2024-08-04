@@ -4,17 +4,64 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'title';
+    src: url('fonts/FH\ Collena\ Script\ 02\ Free\ Personal\ Use.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cuerpo';
+    src: url('fonts/Letters\ for\ Learners.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #222f3e;
+    background-image: url(img/IMG-20240714-WA0007\(1\).jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+    text-align: center;
+    color: #a4a4a4;
+    font-family: 'title';
+    font-size: 3rem;
+    text-shadow: 
+        5px 5px 0 #161616,
+        -5px -5px 0 #161616, 
+        5px -5px 0 #161616, 
+        -5px 5px 0 #161616; 
+}
+
+.cuerpo {
+    padding-top: 30px;
+    text-align: center;
+    color: #a4a4a4;
+    font-family: 'cuerpo';
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.heart {
 }
 
 @keyframes animacion {
     0% {
-        transform: rotate(-45deg) scale(1.07);
+        transform: rotate(-45deg) scale(1.10);
     }
     80% {
         transform: rotate(-45deg) scale(1.0);
@@ -28,9 +75,9 @@ body {
     position: relative;
     width: 70px;
     height: 70px;
-    background: #ff4757;
+    background: #3f448c;
     transform: rotate(-45deg);
-    box-shadow: -10px 10px 90px #ff4757;
+    box-shadow: -10px 10px 90px #3f448c;
     animation: animacion .6s linear infinite;
 }
 
@@ -40,9 +87,9 @@ body {
     top: -50%;
     width: 70px;
     height: 70px;
-    background: #ff4757;
+    background: #3f448c;
     border-radius: 50%;
-    box-shadow: -10px 10px 90px #ff4757;
+    box-shadow: -10px 10px 90px #3f448c;
 }
 
 .heart::after {
@@ -51,7 +98,8 @@ body {
     right: -50%;
     width: 70px;
     height: 70px;
-    background: #ff4757;
+    background: #3f448c;
     border-radius: 50%;
-    box-shadow: -10px 10px 90px #ff4757;
+    box-shadow: -10px 10px 90px #3f448c;
 }
+

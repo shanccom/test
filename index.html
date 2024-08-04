@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NUESTRO PRIMER MES :3</title>
-    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class = "heart"></div>
+    <div>
+        <h1 class = "titulo">Nuestro Primer Aniversario</h1>
+        <p class = "cuerpo"> 
+            Hola amor, ¿cómo estás? 
+            ¡Ya estamos cumpliendo un mes! Han pasado muchas cosas y
+            no sé cómo describirlas... Hemos podido compartir 
+            recuerdos muy bonitos, como cuando salimos solo como 
+            amigos y estuvimos hablando por horas y horas, o 
+            cuando empezamos a salir durante toda una semana en 
+            la universidad, donde cada vez que pasábamos por Ing. 
+            Civil, tu amiga Nicole siempre nos encontraba, o cuando 
+            empezamos a hablar hasta la noche, o cuando una noche 
+            empezamos a ver que ambos nos gustábamos, o cuando 
+            empezamos a salir como pareja. Hay muchos momentos que 
+            son tan importantes... y tantos momentos que nos esperan.
+            Por eso quiero que siempre recuerdes que me encantas, 
+            quiero estar contigo y quiero que siempre seas la 
+            persona más importante para mí.
+        
+        </p>
+    </div>
+
+    <section class="heart-section">
+        <div class="heart"></div>
+    </section>
+
+    <audio id="background-music" loop>
+        <source src="music/audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('background-music');
+            audio.play();
+        });
+    </script>
+
 </body>
 </html>
