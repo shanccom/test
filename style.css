@@ -103,3 +103,26 @@ body {
     box-shadow: -10px 10px 90px #3f448c;
 }
 
+@media (min-width: 768px) {
+    
+    
+    body {
+        flex-direction: column;
+        background-size: contain;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .cuerpo {
+        font-size: 1.2rem;
+        padding-left: 35rem;
+        padding-right: 35rem;
+    }
+
+    .heart {
+        width: 70px;
+        height: 70px;
+    }
+}
